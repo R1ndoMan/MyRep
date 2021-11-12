@@ -1,19 +1,23 @@
 "Use strict";
-let a = 2;
-console.log(a);
 
-let url = "toys";
-let urlFuck = "fuck";
-    url = urlFuck;
-    urlFuck = `плохое слово ${url}`;
+const numberOfFilms = prompt("Сколько вы посмотрели фильмов?");
 
-console.log(`тут будет текст ${urlFuck}`);
+console.log(numberOfFilms);
 
-let names = "Ermek";
-    profession = "Айтишник"
-    job = "Payda";
+const lastWachedFilms = prompt("Один из последних просмотренных фильмов?"),
+      filmScore = prompt("На сколько оцените его?"),
+      lastWachedFilms2 = prompt("Один из последних просмотренных фильмов?"),
+      filmScore2 = prompt("На сколько оцените его?");
 
-    console.log(`Меня зовут ${names}, я работаю ${profession}ом в компании ${job}`);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false,
+};
 
+personalMovieDB.movies[lastWachedFilms] = filmScore;
+personalMovieDB.movies[lastWachedFilms2] = filmScore2;
 
-
+console.log(personalMovieDB);
