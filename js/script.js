@@ -21,3 +21,31 @@ personalMovieDB.movies[lastWachedFilms] = filmScore;
 personalMovieDB.movies[lastWachedFilms2] = filmScore2;
 
 console.log(personalMovieDB);
+
+
+
+let num = 0;
+while (num < 10) {
+    console.log(num);
+
+    num++
+};
+
+
+for (num = 0; num <= 11; num++) {
+    console.log(num);
+};
+
+
+function ifNum() {
+    if ( num == 10) {
+    console.log("все верно")
+ } else {
+     console.log("Error")
+ };
+
+ console.log(num);
+};
+
+ifNum();
+ 
