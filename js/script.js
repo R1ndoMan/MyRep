@@ -27,7 +27,7 @@ for (let i = 0; i < 2; i++){
             
       }
 
-if (personalMovieDB.count < 10) {
+if (personalMovieDB.count <= 10) {
     alert('Просмотрено довольно мало фильмов');
 } else if (personalMovieDB.count > 10 && personalMovieDB.count < 30) {
     alert('Вы классический зритель');
@@ -36,28 +36,3 @@ if (personalMovieDB.count < 10) {
 } else alert('Произошла ошибка');
 
 console.log(personalMovieDB);
-
-
-
-
-
-
-let num = 0;
-
-for (num = 0; num <= 10; num++) {
-    console.log(num);
-};
-
-
-function ifNum() {
-    if ( num == 11) {
-    console.log("все верно")
- } else {
-     console.log("Error")
- };
-
- console.log(num);
-};
-
-ifNum();
- 
